@@ -1,7 +1,7 @@
 /*
  * File: 106-bitonic_sort.c
  * Auth: Jerome Udoh
- */
+*/
 
 #include "sort.h"
 
@@ -43,7 +43,7 @@ if (seq > 1)
 for (i = start; i < start + jump; i++)
 {
 if ((flow == UP && array[i] > array[i + jump]) ||
-    (flow == DOWN && array[i] < array[i + jump]))
+		(flow == DOWN && array[i] < array[i + jump]))
 swap_ints(array + i, array + i + jump);
 }
 bitonic_merge(array, size, start, jump, flow);
